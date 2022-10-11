@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from classes.fake_news import predict
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3' 
 
 # Create your views here.
 def index(request):
